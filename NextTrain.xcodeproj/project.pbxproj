@@ -11,6 +11,7 @@
 		6B8CA8E92B93C22A00BF1546 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8CA8E82B93C22A00BF1546 /* ContentView.swift */; };
 		6B8CA8EB2B93C22C00BF1546 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B8CA8EA2B93C22C00BF1546 /* Assets.xcassets */; };
 		6B8CA8EE2B93C22C00BF1546 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B8CA8ED2B93C22C00BF1546 /* Preview Assets.xcassets */; };
+		B7EDBD3A2B93CFF000A88FD4 /* MTAUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EDBD392B93CFF000A88FD4 /* MTAUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		6B8CA8E82B93C22A00BF1546 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6B8CA8EA2B93C22C00BF1546 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B8CA8ED2B93C22C00BF1546 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B7EDBD392B93CFF000A88FD4 /* MTAUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTAUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				6B8CA8E62B93C22A00BF1546 /* NextTrainApp.swift */,
 				6B8CA8E82B93C22A00BF1546 /* ContentView.swift */,
+				B7EDBD392B93CFF000A88FD4 /* MTAUtils.swift */,
 				6B8CA8EA2B93C22C00BF1546 /* Assets.xcassets */,
 				6B8CA8EC2B93C22C00BF1546 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7EDBD3A2B93CFF000A88FD4 /* MTAUtils.swift in Sources */,
 				6B8CA8E92B93C22A00BF1546 /* ContentView.swift in Sources */,
 				6B8CA8E72B93C22A00BF1546 /* NextTrainApp.swift in Sources */,
 			);
