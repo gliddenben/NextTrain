@@ -10,7 +10,12 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            TrainBadge(train: .six)
+            ScrollView {
+                VStack {
+                    ForEach(MTATrain.allCases, id: \.self) {train in
+                        TrainBadge(train: train)}
+                }
+            }.scrollIndicators(.hidden)
             Spacer()
             Image(systemName: "tram.fill")
                 .imageScale(.large)
