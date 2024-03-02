@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
+      VStack {
+            Spacer()
             Image(systemName: "tram.fill")
                 .imageScale(.large)
                 .foregroundStyle(.green)
