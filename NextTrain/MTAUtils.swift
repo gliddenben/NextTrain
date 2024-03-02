@@ -39,30 +39,30 @@ func getColorForLine(line: MTALine) -> Color {
   }
 }
 
-enum MTATrain {
-    case one
-    case two
-    case three
-    case four
-    case five
-    case six
-    case seven
-    case a
-    case c
-    case e
-    case b
-    case d
-    case f
-    case m
-    case g
-    case j
-    case z
-    case l
-    case n
-    case q
-    case r
-    case w
-    case s
+enum MTATrain: String {
+    case one = "1"
+    case two = "2"
+    case three = "3"
+    case four = "4"
+    case five = "5"
+    case six = "6"
+    case seven = "7"
+    case a = "A"
+    case c = "C"
+    case e = "E"
+    case b = "B"
+    case d = "D"
+    case f = "F"
+    case m = "M"
+    case g = "G"
+    case j = "J"
+    case z = "Z"
+    case l = "L"
+    case n = "N"
+    case q = "Q"
+    case r = "R"
+    case w = "W"
+    case s = "S"
 }
 
 func getLineForTrain(train: MTATrain) -> MTALine {
