@@ -10,12 +10,19 @@ import SwiftUI
 struct TrainBadge: View {
     let train: MTATrain
     var body: some View {
-        Circle()
-            .frame(width: 100)
-            .foregroundStyle(getColorForTrain(train: train))
+        ZStack{
+            Circle()
+                .frame(width: 60)
+                .foregroundStyle(getColorForTrain(train: train))
+            Text(train.rawValue)
+                .font(.largeTitle)
+                .fontWeight(.semibold)
+                .foregroundStyle(.white)
+        }
+        
     }
 }
 
 #Preview {
-    TrainBadge(train: .six)
+    TrainBadge(train: .l)
 }
