@@ -28,7 +28,7 @@ struct ContentView: View {
             ScrollView(.horizontal) {
                 HStack {
                     ForEach(MTATrain.allCases, id: \.self) {train in
-                        TrainBadge(train: train)}
+                        TrainBadge(train: train, badgeSize: .large)}
                 }
             }
             .scrollIndicators(.hidden)

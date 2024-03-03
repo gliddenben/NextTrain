@@ -11,7 +11,7 @@ struct TrainArrivalIcon: View {
     let train: MTATrain
     var body: some View {
         HStack {
-            SmallTrainBadge(train: train)
+            TrainBadge(train: train, badgeSize: .small)
                 .padding(.leading, 10)
                 .padding(.trailing, 27.5)
             Text("Direction")
