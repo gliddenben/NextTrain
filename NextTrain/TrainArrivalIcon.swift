@@ -13,11 +13,12 @@ struct TrainArrivalIcon: View {
         HStack {
             TrainBadge(train: train)
                 .padding(.leading, 15)
-                .padding(.trailing, 35)
+                .padding(.trailing, 20)
             Text("Direction")
                 .font(.largeTitle)
                 .fontWeight(.medium)
-                .padding(.trailing, 25)
+                .padding(.leading, 20)
+                .padding(.trailing, 20)
             VStack{
                 // TODO: need to update the first text string (currently "5") so that it's a function of train arrival time
                 Text("5")
@@ -25,8 +26,10 @@ struct TrainArrivalIcon: View {
                     .fontWeight(.medium)
                 Text("min")
             }
-            .padding(10)
-            .padding(.trailing, 10)
+            .padding(.leading, 20)
+            .padding(.top, 10)
+            .padding(.bottom, 10)
+            .padding(.trailing, 15)
         }
         .overlay(
             RoundedRectangle(cornerRadius: 10.0)

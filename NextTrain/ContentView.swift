@@ -40,6 +40,7 @@ struct ContentView: View {
                 }
             }
             .padding(.top, 10)
+            .scrollIndicators(.hidden)
             Image(systemName: "tram.fill")
                 .imageScale(.medium)
                 .foregroundStyle(.green)
