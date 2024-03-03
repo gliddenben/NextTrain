@@ -30,10 +30,18 @@ struct ContentView: View {
                     ForEach(MTATrain.allCases, id: \.self) {train in
                         TrainBadge(train: train)}
                 }
-            }.scrollIndicators(.hidden)
-            Spacer()
+            }
+            .scrollIndicators(.hidden)
+            ScrollView {
+                VStack {
+                    ForEach(MTATrain.allCases, id: \.self) {
+                        train in TrainArrivalIcon(train: train)
+                    }
+                }
+            }
+            .padding(.top, 10)
             Image(systemName: "tram.fill")
-                .imageScale(.large)
+                .imageScale(.medium)
                 .foregroundStyle(.green)
                 .font(.largeTitle)
             Text("NextTrain")
