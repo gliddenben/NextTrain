@@ -18,7 +18,10 @@ struct ContentView: View {
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .padding(15)
-            }.overlay(
+            }
+            .background(RoundedRectangle(cornerRadius: 10)
+                .fill(Color.gray.opacity(0.5)))
+            .overlay(
                 RoundedRectangle(cornerRadius: 10.0)
                     .stroke(Color.black, lineWidth: 2.0))
             .padding(5)
