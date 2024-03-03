@@ -11,8 +11,8 @@ struct TrainArrivalIcon: View {
     let train: MTATrain
     var body: some View {
         HStack {
-            TrainBadge(train: train)
-                .padding(.leading, 15)
+            SmallTrainBadge(train: train)
+                .padding(.leading, 10)
                 .padding(.trailing, 20)
             Text("Direction")
                 .font(.largeTitle)
@@ -27,12 +27,12 @@ struct TrainArrivalIcon: View {
                 Text("min")
             }
             .padding(.leading, 20)
-            .padding(.top, 10)
-            .padding(.bottom, 10)
-            .padding(.trailing, 15)
+            .padding(.top, 7.5)
+            .padding(.bottom, 7.5)
+            .padding(.trailing, 10)
         }
         .overlay(
-            RoundedRectangle(cornerRadius: 10.0)
+            RoundedRectangle(cornerRadius: 5.0)
                 .stroke(Color.black, lineWidth: 2.0))
     }
 }
