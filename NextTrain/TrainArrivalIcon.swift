@@ -12,8 +12,9 @@ struct TrainArrivalIcon: View {
     var body: some View {
         HStack {
             TrainBadge(train: train, badgeSize: .small)
-                .padding(.leading, 10)
                 .padding(.trailing, 27.5)
+            
+            // TODO: need to update direction so that it's a function of the train final destination
             Text("Direction")
                 .font(.largeTitle)
                 .fontWeight(.medium)
@@ -29,8 +30,8 @@ struct TrainArrivalIcon: View {
             .padding(.leading, 27.5)
             .padding(.top, 7.5)
             .padding(.bottom, 7.5)
-            .padding(.trailing, 10)
         }
+        .frame(maxWidth: .infinity)
         .overlay(
             Rectangle()
                 .stroke(Color.black, lineWidth: 2.0))

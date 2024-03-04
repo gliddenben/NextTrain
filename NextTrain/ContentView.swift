@@ -32,6 +32,8 @@ struct ContentView: View {
                 }
             }
             .scrollIndicators(.hidden)
+            .padding(.leading, 7.5)
+            .padding(.trailing, 7.5)
             ScrollView {
                 LazyVStack(spacing: 0) {
                     ForEach(MTATrain.allCases, id: \.self) {
@@ -49,7 +51,6 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .fontWeight(.thin)
         }
-        .padding()
     }
 }
 
