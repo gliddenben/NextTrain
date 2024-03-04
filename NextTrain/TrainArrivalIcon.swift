@@ -32,7 +32,7 @@ struct TrainArrivalIcon: View {
             .padding(.trailing, 10)
         }
         .overlay(
-            RoundedRectangle(cornerRadius: 5.0)
+            Rectangle()
                 .stroke(Color.black, lineWidth: 2.0))
     }
 }

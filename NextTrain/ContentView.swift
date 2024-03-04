@@ -33,7 +33,7 @@ struct ContentView: View {
             }
             .scrollIndicators(.hidden)
             ScrollView {
-                VStack {
+                LazyVStack(spacing: 0) {
                     ForEach(MTATrain.allCases, id: \.self) {
                         train in TrainArrivalIcon(train: train)
                     }
