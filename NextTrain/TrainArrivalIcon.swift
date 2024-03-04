@@ -9,6 +9,8 @@ import SwiftUI
 
 struct TrainArrivalIcon: View {
     let train: MTATrain
+    @Environment(\.colorScheme) var colorScheme
+    
     var body: some View {
         HStack {
             TrainBadge(train: train, badgeSize: .small)
@@ -34,8 +36,12 @@ struct TrainArrivalIcon: View {
         .frame(maxWidth: .infinity)
         .overlay(
             Rectangle()
-                .stroke(Color.black, lineWidth: 2.0))
+                .stroke(borderColor, lineWidth: 2.0))
     }
+    
+    var borderColor: Color {
+            colorScheme == .dark ? .white : .black
+        }
 }
 
 #Preview {
