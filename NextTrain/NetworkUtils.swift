@@ -12,8 +12,8 @@ enum RealTimeFeedEndpoints: String {
 }
 
 struct NetworkUtils {
-    static func sendNetworkRequest(to url: URL) async throws -> Data {
-        var request = URLRequest(url: url)
+    static func sendNetworkRequest(to endpoint: RealTimeFeedEndpoints) async throws -> Data {
+        var request = URLRequest(url: URL(string: endpoint.rawValue)!)
         request.httpMethod = "GET"
         request.addValue(Secrets.ACCESS_KEY, forHTTPHeaderField: "x-api-key")
         

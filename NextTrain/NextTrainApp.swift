@@ -11,7 +11,12 @@ import SwiftUI
 struct NextTrainApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().onAppear {
+                Task {
+                    let data = try await NetworkUtils.sendNetworkRequest(to: .l)
+                    let feed = try TransitRealtime_FeedMessage(serializedData: data)
+                }
+            }
         }
     }
 }
