@@ -54,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B14ABDF2B9D0D96002EF508 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6B14ABDD2B9D09C3002EF508 /* Stations.csv */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		6B8CA8DA2B93C22A00BF1546 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +81,7 @@
 		6B8CA8E52B93C22A00BF1546 /* NextTrain */ = {
 			isa = PBXGroup;
 			children = (
+				6B14ABDF2B9D0D96002EF508 /* Resources */,
 				6B8CA8E62B93C22A00BF1546 /* NextTrainApp.swift */,
 				6B8CA8E82B93C22A00BF1546 /* ContentView.swift */,
 				B7EDBD392B93CFF000A88FD4 /* MTAUtils.swift */,
@@ -84,7 +93,6 @@
 				6B14ABD92B9CF08D002EF508 /* Secrets.swift */,
 				6B8CA8EA2B93C22C00BF1546 /* Assets.xcassets */,
 				6B8CA8EC2B93C22C00BF1546 /* Preview Content */,
-				6B14ABDD2B9D09C3002EF508 /* Stations.csv */,
 			);
 			path = NextTrain;
 			sourceTree = "<group>";

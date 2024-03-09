@@ -96,8 +96,8 @@ func getColorForTrain(train: MTATrain) -> Color {
 }
 
 struct MTAStation {
-    let stationID: String
-    let complexID: String
+    let stationID: Int
+    let complexID: Int
     let gtfsStopID: String
     let division: String
     let line: String
@@ -105,8 +105,8 @@ struct MTAStation {
     let borough: String
     let daytimeRoutes: String
     let structure: String
-    let gtfsLatitude: String
-    let gtfsLongitude: String
+    let gtfsLatitude: Double
+    let gtfsLongitude: Double
     let northDirectionLabel: String
     let southDirectionLabel: String
     let ada: String
