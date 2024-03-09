@@ -7,6 +7,10 @@
 
 import Foundation
 
+enum RealTimeFeedEndpoints: String {
+    case l = "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-l"
+}
+
 struct NetworkUtils {
     static func sendNetworkRequest(to url: URL) async throws -> Data {
         var request = URLRequest(url: url)
