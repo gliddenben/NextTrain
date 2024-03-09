@@ -14,6 +14,7 @@
 		6B14ABD72B9CEC56002EF508 /* protoc-gen-swift in Frameworks */ = {isa = PBXBuildFile; productRef = 6B14ABD62B9CEC56002EF508 /* protoc-gen-swift */; };
 		6B14ABDA2B9CF08D002EF508 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B14ABD92B9CF08D002EF508 /* Secrets.swift */; };
 		6B14ABDC2B9CF23D002EF508 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B14ABDB2B9CF23D002EF508 /* NetworkUtils.swift */; };
+		6B14ABDE2B9D09C3002EF508 /* Stations.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6B14ABDD2B9D09C3002EF508 /* Stations.csv */; };
 		6B8CA8E72B93C22A00BF1546 /* NextTrainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8CA8E62B93C22A00BF1546 /* NextTrainApp.swift */; };
 		6B8CA8E92B93C22A00BF1546 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8CA8E82B93C22A00BF1546 /* ContentView.swift */; };
 		6B8CA8EB2B93C22C00BF1546 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B8CA8EA2B93C22C00BF1546 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		6B14ABCE2B9CEBFA002EF508 /* gtfs-realtime.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "gtfs-realtime.pb.swift"; sourceTree = "<group>"; };
 		6B14ABD92B9CF08D002EF508 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		6B14ABDB2B9CF23D002EF508 /* NetworkUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
+		6B14ABDD2B9D09C3002EF508 /* Stations.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = Stations.csv; sourceTree = "<group>"; };
 		6B8CA8E32B93C22A00BF1546 /* NextTrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextTrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B8CA8E62B93C22A00BF1546 /* NextTrainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextTrainApp.swift; sourceTree = "<group>"; };
 		6B8CA8E82B93C22A00BF1546 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				6B14ABD92B9CF08D002EF508 /* Secrets.swift */,
 				6B8CA8EA2B93C22C00BF1546 /* Assets.xcassets */,
 				6B8CA8EC2B93C22C00BF1546 /* Preview Content */,
+				6B14ABDD2B9D09C3002EF508 /* Stations.csv */,
 			);
 			path = NextTrain;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B14ABDE2B9D09C3002EF508 /* Stations.csv in Resources */,
 				6B8CA8EE2B93C22C00BF1546 /* Preview Assets.xcassets in Resources */,
 				6B8CA8EB2B93C22C00BF1546 /* Assets.xcassets in Resources */,
 			);
