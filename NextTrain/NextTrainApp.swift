@@ -42,8 +42,8 @@ struct NextTrainApp: App {
                     stations[station.gtfsStopID] = station
                 }
                 Task {
-                    let data = try await NetworkUtils.sendNetworkRequest(to: .l)
-                    let feed = try TransitRealtime_FeedMessage(serializedData: data)
+                    let dataL = try await NetworkUtils.sendNetworkRequest(to: .l)
+                    let feedL = try TransitRealtime_FeedMessage(serializedData: dataL)
                 }
             }
         }

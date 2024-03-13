@@ -8,12 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isMenuVisible = false
     var body: some View {
-        VStack {
-            HStack {
-                Image(systemName: "line.horizontal.3")
-                    .imageScale(.large)
-                    .padding(.leading, 10)
+        VStack { // the stack for the whole screen
+            HStack { // station dropdown box horizontal stack
+                Button(action: {
+                    self.isMenuVisible.toggle()
+                }) {
+                    Image(systemName: "line.horizontal.3")
+                        .imageScale(.large)
+                        .padding(.leading, 10)
+                }
                 Text("Station Name")
                     .font(.largeTitle)
                     .fontWeight(.bold)
@@ -25,7 +30,22 @@ struct ContentView: View {
                 RoundedRectangle(cornerRadius: 10.0)
                     .stroke(Color.black, lineWidth: 2.0))
             .padding(5)
-            ScrollView(.horizontal) {
+            
+            if isMenuVisible {
+                VStack(alignment: .leading) {
+                    Text("Menu Item 1").padding()
+                    Text("Menu Item 2").padding()
+                    Text("Menu Item 3").padding()
+                }
+                .frame(maxWidth: .infinity)
+                .background(Color.white)
+                .cornerRadius(10)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10.0)
+                        .stroke(Color.black))
+            }
+            
+            ScrollView(.horizontal) { // list of trains available at this station
                 HStack {
                     ForEach(MTATrain.allCases, id: \.self) {train in
                         TrainBadge(train: train, badgeSize: .large)}
@@ -34,7 +54,8 @@ struct ContentView: View {
             .scrollIndicators(.hidden)
             .padding(.leading, 7.5)
             .padding(.trailing, 7.5)
-            ScrollView {
+            
+            ScrollView { // list of upcoming trains
                 LazyVStack(spacing: 0) {
                     ForEach(MTATrain.allCases, id: \.self) {
                         train in TrainArrivalIcon(train: train)
@@ -43,6 +64,8 @@ struct ContentView: View {
             }
             .padding(.top, 10)
             .scrollIndicators(.hidden)
+            
+            // logo at the bottom of the app
             Image(systemName: "tram.fill")
                 .imageScale(.medium)
                 .foregroundStyle(.green)
