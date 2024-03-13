@@ -32,17 +32,21 @@ struct ContentView: View {
             .padding(5)
             
             if isMenuVisible {
-                VStack(alignment: .leading) {
-                    Text("Menu Item 1").padding()
-                    Text("Menu Item 2").padding()
-                    Text("Menu Item 3").padding()
+                ScrollView(.vertical) {
+                    VStack(alignment: .leading) {
+                        Text("Menu Item 1").padding()
+                        Text("Menu Item 2").padding()
+                        Text("Menu Item 3").padding()
+                        Text("Menu Item 4").padding()
+                        Text("Menu Item 5").padding()
+                    }
+                    .frame(maxWidth: .infinity)
+                    .background(Color.white)
+                    .cornerRadius(10)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 10.0)
+                            .stroke(Color.black))
                 }
-                .frame(maxWidth: .infinity)
-                .background(Color.white)
-                .cornerRadius(10)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 10.0)
-                        .stroke(Color.black))
             }
             
             ScrollView(.horizontal) { // list of trains available at this station
