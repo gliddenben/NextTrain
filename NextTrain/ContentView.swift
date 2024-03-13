@@ -34,11 +34,21 @@ struct ContentView: View {
             if isMenuVisible {
                 ScrollView(.vertical) {
                     VStack(alignment: .leading) {
-                        Text("Menu Item 1").padding()
-                        Text("Menu Item 2").padding()
-                        Text("Menu Item 3").padding()
-                        Text("Menu Item 4").padding()
-                        Text("Menu Item 5").padding()
+                        Text("Menu Item 1")
+                            .padding(2.5)
+                            .font(.title)
+                        Text("Menu Item 2")
+                            .padding(2.5)
+                            .font(.title)
+                        Text("Menu Item 3")
+                            .padding(2.5)
+                            .font(.title)
+                        Text("Menu Item 4")
+                            .padding(2.5)
+                            .font(.title)
+                        Text("Menu Item 5")
+                            .padding(2.5)
+                            .font(.title)
                     }
                     .frame(maxWidth: .infinity)
                     .background(Color.white)
